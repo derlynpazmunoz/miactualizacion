@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo2"
+    tools:context=".DetalleProyecto">
+
+  <TextView
+      android:id="@+id/textView10"
+      android:layout_width="372dp"
+      android:layout_height="105dp"
+      android:layout_marginStart="16dp"
+      android:layout_marginTop="4dp"
+      android:textStyle="bold"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/textView2"
+      tools:ignore="MissingConstraints" />
+
+  <ImageView
+      android:id="@+id/imageView3"
+      android:layout_width="136dp"
+      android:layout_height="139dp"
+      android:layout_marginStart="16dp"
+      android:layout_marginTop="136dp"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:srcCompat="@drawable/img"
+      tools:ignore="MissingConstraints" />
+
+  <TextView
+      android:id="@+id/Titulo"
+      android:layout_width="194dp"
+      android:layout_height="30dp"
+      android:gravity="center"
+      android:text="Detalle"
+      android:textColor="@color/white"
+      android:textSize="20sp"
+      android:textStyle="bold"
+
+      app:layout_constraintBottom_toTopOf="@+id/Textnombre_proyecto"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.37" />
+
+  <EditText
+      android:id="@+id/Textnombre_proyecto"
+      android:layout_width="212dp"
+      android:layout_height="63dp"
+      android:layout_marginTop="136dp"
+      android:ems="10"
+      android:hint="Nombre del proyecto"
+      android:inputType="text"
+      android:textSize="18sp"
+      android:textStyle="bold"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.531"
+      app:layout_constraintStart_toEndOf="@+id/imageView3"
+      app:layout_constraintTop_toTopOf="parent"
+      tools:ignore="MissingConstraints" />
+
+  <EditText
+      android:id="@+id/TextEnlace"
+      android:layout_width="214dp"
+      android:layout_height="49dp"
+      android:layout_marginTop="24dp"
+      android:ems="10"
+      android:hint="Enlace"
+      android:inputType="text"
+      android:textSize="18sp"
+      android:textStyle="bold"
+      app:layout_constraintBottom_toTopOf="@+id/textView2"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toEndOf="@+id/imageView3"
+      app:layout_constraintTop_toBottomOf="@+id/Textnombre_proyecto"
+      app:layout_constraintVertical_bias="0.076"
+      tools:ignore="MissingConstraints" />
+
+  <EditText
+      android:id="@+id/TextEstado"
+      android:layout_width="374dp"
+      android:layout_height="66dp"
+      android:ems="10"
+      android:inputType="text"
+      android:text="Estado"
+      android:textSize="18sp"
+      android:textStyle="bold"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/textView10"
+      app:layout_constraintVertical_bias="0.197"
+      tools:ignore="MissingConstraints"
+      tools:layout_editor_absoluteX="21dp" />
+
+  <TextView
+      android:id="@+id/textView2"
+      android:layout_width="232dp"
+      android:layout_height="31dp"
+      android:layout_marginTop="36dp"
+      android:text="Descripción"
+      android:textSize="18sp"
+      app:layout_constraintTop_toBottomOf="@+id/imageView3"
+      tools:ignore="MissingConstraints"
+      tools:layout_editor_absoluteX="16dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
