@@ -36,7 +36,7 @@
       android:gravity="center"
       android:text="Detalle"
       android:textColor="@color/white"
-      android:textSize="20sp"
+      android:textSize="22sp"
       android:textStyle="bold"
 
       app:layout_constraintBottom_toTopOf="@+id/Textnombre_proyecto"
@@ -79,12 +79,11 @@
       tools:ignore="MissingConstraints" />
 
   <EditText
-      android:id="@+id/TextEstado"
       android:layout_width="374dp"
       android:layout_height="66dp"
       android:ems="10"
+      android:hint="Estado"
       android:inputType="text"
-      android:text="Estado"
       android:textSize="18sp"
       android:textStyle="bold"
       app:layout_constraintBottom_toBottomOf="parent"
